@@ -16,7 +16,7 @@ const CountryList = () => {
     const [regionFilter, setRegionFilter] = useState('all');
     const [populationFilter, setPopulationFilter] = useState('all');
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 10;
+    const itemsPerPage = 12;
 
     useEffect(() => {
         const loadCountries = async () => {
