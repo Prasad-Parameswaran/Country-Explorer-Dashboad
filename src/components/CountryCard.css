@@ -1,0 +1,83 @@
+.country-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.country-flag {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #f8f9fa;
+  margin-bottom: 15px;
+}
+
+.country-card h3 {
+  margin: 10px 0;
+  color: #495057;
+  font-size: 1.2em;
+}
+
+.country-card p {
+  margin: 6px 0;
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .country-card {
+    margin: 8px;
+    padding: 15px;
+  }
+
+  .country-flag {
+    width: 80px;
+    height: 60px;
+  }
+
+  .country-card h3 {
+    font-size: 1.1em;
+  }
+
+  .favorite-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}

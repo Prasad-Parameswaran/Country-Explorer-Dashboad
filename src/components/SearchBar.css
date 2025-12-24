@@ -1,0 +1,35 @@
+.search-bar {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background: white;
+}
+
+.search-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .search-bar {
+    margin: 15px 0;
+  }
+
+  .search-input {
+    max-width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
